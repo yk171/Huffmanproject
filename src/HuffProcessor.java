@@ -61,7 +61,7 @@ public class HuffProcessor {
 			if (bit == -1) break;
 			freq[PSEUDO_EOF] = 1;
 			if(bit == PSEUDO_EOF) freq[PSEUDO_EOF] = 1;
-			else freq[bit] +=1;
+			freq[bit] +=1;
 		}
 		
 		//in.readBits(in);
