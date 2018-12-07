@@ -90,7 +90,7 @@ public class HuffProcessor {
 		// TODO Auto-generated method stub
 		String [] encodings = new String[ALPH_SIZE+1];
 		codingHelper(root,"", encodings);
-		return null;
+		return encodings;
 	}
 	
 	
