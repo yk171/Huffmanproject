@@ -59,12 +59,12 @@ public class HuffProcessor {
 		while(in.readBits(BITS_PER_WORD) != -1) {
 			int bit = in.readBits(BITS_PER_WORD);
 			freq[PSEUDO_EOF] = 1;
-			if(bit == PSEUDO_EOF) {
-				
-			}
+			if(bit == PSEUDO_EOF) freq[PSEUDO_EOF] = 1;
+			else freq[bit] +=1;
 		}
+		
 		//in.readBits(in);
-		return null;
+		return freq;
 	}
 
 	private HuffNode makeTreeFromCounts(int[] counts) {
