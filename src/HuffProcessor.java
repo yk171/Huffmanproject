@@ -1,4 +1,4 @@
-
+import java.util.*;
 /**
  * Although this class has a history of several years,
  * it is starting from a blank-slate, new and clean implementation
@@ -68,7 +68,20 @@ public class HuffProcessor {
 	}
 
 	private HuffNode makeTreeFromCounts(int[] counts) {
-		// TODO Auto-generated method stub
+		PriorityQueue<HuffNode> pq = new PriorityQueue<>();
+		for(int i = 0; i < freq.size;i++) {
+		    pq.add(new HuffNode(index,freq[index],null,null);
+		}
+
+		while (pq.size() > 1) {
+		    HuffNode left = pq.remove();
+		    HuffNode right = pq.remove();
+		    // create new HuffNode t with weight from
+		    // left.weight+right.weight and left, right subtrees
+		    pq.add(t);
+		}
+		HuffNode root = pq.remove();
+
 		return null;
 	}
 
