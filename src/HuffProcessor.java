@@ -69,7 +69,7 @@ public class HuffProcessor {
 				
 			}
 		}
-		in.readBits(in);
+		//in.readBits(in);
 		return null;
 	}
 
